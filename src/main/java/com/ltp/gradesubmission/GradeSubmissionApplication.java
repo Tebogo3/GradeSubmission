@@ -1,5 +1,4 @@
 package com.ltp.gradesubmission;
-
 import com.ltp.gradesubmission.entity.Course;
 import com.ltp.gradesubmission.entity.Student;
 import com.ltp.gradesubmission.repository.CourseRepository;
@@ -12,12 +11,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDate;
-
 /**
  * we implemented the CommandlineRunner at the entrypoint so that everytime
  * we run the application the student data will be saved into database
  */
-
 @SpringBootApplication
 public class GradeSubmissionApplication implements CommandLineRunner {
 	@Autowired
@@ -46,7 +43,6 @@ public class GradeSubmissionApplication implements CommandLineRunner {
 				new Course("Potions", "POT102", "In this class, you will learn correct mixing and stirring of ingredients to create mixtures with magical effects."),
 				new Course("Transfiguration", "TR442", "In this class, you will learn the art of changing the form or appearance of an object.")
 		};
-
 		for (int j = 0; j < courses.length; j++){
 			courseRepository.save(courses[j]);
 		}

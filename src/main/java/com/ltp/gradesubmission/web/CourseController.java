@@ -27,7 +27,6 @@ import java.util.Set;
 public class CourseController {
 
     CourseService courseService;
-
     /*
      * handles GET requests made on /course/{id}.
      * with return type: ResponseEntity<Student>.
@@ -42,7 +41,8 @@ public class CourseController {
     })
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Course> getCourse(@PathVariable Long id) {
-        return new ResponseEntity<>(courseService.getCourse(id),HttpStatus.OK);
+        Course course = courseService.getCourse(id);
+        return new ResponseEntity<>(course,HttpStatus.OK);
     }
 
     /*
