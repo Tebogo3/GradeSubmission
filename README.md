@@ -1,5 +1,5 @@
 # GradeSubmission
-This is a springboot application with rest endpoints which communicates with H2 database.
+This is a springboot application with rest endpoints which communicate with H2 database.
 It creates, retrieve, update and delete entities from database using Spring JPA.
 It has the following Entity Relationship
   - Bi-directional (One to Many) relationship between Student and Grades Entity.
