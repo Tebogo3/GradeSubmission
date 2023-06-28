@@ -34,16 +34,13 @@ public class Course {
     @NotBlank(message = "Description cannot be blank")
     @Column(name = "description", nullable = false)
     private String description;
-
     @JsonIgnore
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
     private List<Grade> grades;
-
     /**
      * A Set is a collection type that prevents the addition of duplicate elements.
      * A student cannot enroll in duplicate courses
      */
-
     @JsonIgnore
     @ManyToMany
     @JoinTable(
