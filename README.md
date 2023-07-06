@@ -1,6 +1,6 @@
 # GradeSubmission
 This is a Springboot application with rest endpoints which communicate with H2 in-memory relational database.
-It creates, retrieve, update and delete entities from database using Spring JPA. It has the following Entity Relationships:
+It creates, retrieve, update and delete resources from database using Spring JPA. It has the following Entity Relationships:
 •	Bi-directional (One to Many) relationship between Student and Grades Entity.
 •	Bi-directional (One to Many) relationship between Course and Grades.
 •	Many to Many relationship between Students and Course.
